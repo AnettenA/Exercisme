@@ -6,6 +6,7 @@ def convert(number):
         output.append('Plang')
     if number % 7 == 0:
         output.append('Plong')
-    if output == []:
-        output = str(number)
-    return ''.join(output)
+    if output != []:
+        return ''.join(output)
+    else:
+        return str(number)
